@@ -13,10 +13,10 @@ int binary_search(const int *arr, int arr_size, int search_element) {
 			return mid;
 		if(arr[mid] < search_element)	// Look in right half
 			left = mid + 1;
-		else							// Look in left half
+		else				// Look in left half
 			right = mid - 1;
 	}
-	return -1;							// Element not found
+	return -1;				// Element not found
 }
 
 int main() {
